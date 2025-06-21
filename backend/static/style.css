@@ -1,4 +1,4 @@
-body {
+/* body {
     font-family: Arial, sans-serif;
     margin: 40px;
 }
@@ -6,4 +6,40 @@ body {
 button {
     padding: 10px 20px;
     font-size: 16px;
+} */
+
+body {
+    font-family: sans-serif;
+    background: #f2f2f2;
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+}
+
+#chat-container {
+    width: 400px;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+#messages {
+    height: 300px;
+    overflow-y: auto;
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+#messages p {
+    margin: 5px 0;
+}
+
+#user-input {
+    width: 75%;
+    padding: 8px;
+}
+
+#send-btn {
+    padding: 9px 15px;
 }
