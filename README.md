@@ -10,7 +10,7 @@ Built with:
 
 - React + TypeScript (frontend)
 - Letta (backend)
-- Vapi (Voice input) 
+- Groq (Voice input) 
 
 ---
 
