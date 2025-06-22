@@ -1,6 +1,7 @@
 import { makeAutoObservable } from "mobx";
 import type { EntryFields } from "../types";
 import { createContext, useContext } from "react";
+import { sendToLettaAgent } from "../utils/makeLettaCall";
 
 class UserEntryStore {
     entries: {id: string, entry: EntryFields}[] = [];
@@ -34,17 +35,7 @@ class UserEntryStore {
     }
 
     *submitInputs(entries: string[]){
-        const res = yield fetch("http://localhost:5000/api/chat", {
-            method: "POST",
-            headers: {
-                "Content-Type": "application/json",
-            },
-            body: JSON.stringify(
-                "meow"
-            )
-        })
-        const data = yield res.json();
-        console.log("Response from server:", data);
+        console.log(yield sendToLettaAgent("The following sentences are requirements from several people:" + entries.join("."),""));
     }
 }
 
