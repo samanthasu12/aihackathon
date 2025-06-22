@@ -4,4 +4,9 @@ export interface Preference {
     price: string;
     dietary: string;
 }
+
+export interface EntryFields {
+    name: string,
+    description: string
+}
   
