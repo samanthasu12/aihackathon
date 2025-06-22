@@ -7,6 +7,5 @@ export interface Preference {
 
 export interface EntryFields {
     name: string,
-    description: string
+    description: string,
 }
-  
